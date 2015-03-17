@@ -66,87 +66,66 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><pre class="codeinput">clc;clear;
-<span class="comment">% 1a)</span>
-a1 = (22+5.1^2)/(50-6.3^2)
-<span class="comment">% b)</span>
-b1 = 21/15 + 8^3/5 - 119/2.9^2
-<span class="comment">% c)</span>
-c1 = nthroot(123, 3) + log(600)/4
-<span class="comment">% d)</span>
-d1 = cos((7*pi)/9) + tan(((7*pi)/15)*pi) * sind(15)
-
-<span class="comment">% 2a)</span>
-x=5.2;
-y=3.6;
-
-a2 = (5/4)*x*y - (8*x)/y^2 + sqrt(x*y)
-<span class="comment">% b)</span>
-b2 = 4*(x*y)^2 - (x+y)/((2*x-y)^2) + sqrt((x+y)/(2*x-y))
-
-<span class="comment">% 3a)</span>
-
-<span class="comment">% ...</span>
-
-<span class="comment">% * 9)</span>
-aa=[zeros(1,5) 4.8] <span class="comment">% Zeilenvektor</span>
-<span class="comment">%aa2=[zeros(5,1); 4.8] % Spaltenvektor</span>
-
-<span class="comment">% * 11)</span>
-AA=[130:-20:10;linspace(1,12,7);linspace(12,72,7)]
-
-<span class="comment">% * 12)</span>
-<span class="comment">%BB(:,1)=linspace(5,5,4)</span>
-<span class="comment">%BB(:,2)=linspace(2,2,4)</span>
-<span class="comment">%BB(:,3)=linspace(3,3,4)</span>
-BB=[linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
-
-<span class="comment">% * 15)</span>
-DD=ones(3,2)
-AA2=[DD zeros(3,2);zeros(3,2) DD]
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Physik - Matlab-Uebungen 1</a></li><li><a href="#2">1a)</a></li><li><a href="#3">b)</a></li><li><a href="#4">c)</a></li><li><a href="#5">d)</a></li><li><a href="#6">2a)</a></li><li><a href="#7">b)</a></li><li><a href="#8">3a)</a></li><li><a href="#9">...</a></li><li><a href="#10">* 9)</a></li><li><a href="#11">* 11)</a></li><li><a href="#12">* 12)</a></li><li><a href="#13">* 15)</a></li></ul></div><h2>Physik - Matlab-Uebungen 1<a name="1"></a></h2><p>Autor: Raphael Laubscher Klasse: I2p</p><pre class="codeinput">clc;clear;
+</pre><h2>1a)<a name="2"></a></h2><pre class="codeinput">a1 = (22+5.1^2)/(50-6.3^2)
 </pre><pre class="codeoutput">
 a1 =
 
     4.6566
 
-
+</pre><h2>b)<a name="3"></a></h2><pre class="codeinput">b1 = 21/15 + 8^3/5 - 119/2.9^2
+</pre><pre class="codeoutput">
 b1 =
 
    89.6502
 
-
+</pre><h2>c)<a name="4"></a></h2><pre class="codeinput">c1 = nthroot(123, 3) + log(600)/4
+</pre><pre class="codeoutput">
 c1 =
 
     6.5724
 
-
+</pre><h2>d)<a name="5"></a></h2><pre class="codeinput">d1 = cos((7*pi)/9) + tan(((7*pi)/15)*pi) * sind(15)
+</pre><pre class="codeoutput">
 d1 =
 
     1.6533
 
+</pre><h2>2a)<a name="6"></a></h2><pre class="codeinput">x=5.2;
+y=3.6;
 
+a2 = (5/4)*x*y - (8*x)/y^2 + sqrt(x*y)
+</pre><pre class="codeoutput">
 a2 =
 
    24.5168
 
-
+</pre><h2>b)<a name="7"></a></h2><pre class="codeinput">b2 = 4*(x*y)^2 - (x+y)/((2*x-y)^2) + sqrt((x+y)/(2*x-y))
+</pre><pre class="codeoutput">
 b2 =
 
    1.4027e+03
 
-
+</pre><h2>3a)<a name="8"></a></h2><h2>...<a name="9"></a></h2><h2>* 9)<a name="10"></a></h2><pre class="codeinput">aa=[zeros(1,5) 4.8] <span class="comment">% Zeilenvektor</span>
+<span class="comment">%aa2=[zeros(5,1); 4.8] % Spaltenvektor</span>
+</pre><pre class="codeoutput">
 aa =
 
          0         0         0         0         0    4.8000
 
-
+</pre><h2>* 11)<a name="11"></a></h2><pre class="codeinput">AA=[130:-20:10;linspace(1,12,7);linspace(12,72,7)]
+</pre><pre class="codeoutput">
 AA =
 
   130.0000  110.0000   90.0000   70.0000   50.0000   30.0000   10.0000
     1.0000    2.8333    4.6667    6.5000    8.3333   10.1667   12.0000
    12.0000   22.0000   32.0000   42.0000   52.0000   62.0000   72.0000
 
-
+</pre><h2>* 12)<a name="12"></a></h2><pre class="codeinput"><span class="comment">%BB(:,1)=linspace(5,5,4)</span>
+<span class="comment">%BB(:,2)=linspace(2,2,4)</span>
+<span class="comment">%BB(:,3)=linspace(3,3,4)</span>
+BB=[linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
+</pre><pre class="codeoutput">
 BB =
 
      5     2     3
@@ -154,7 +133,9 @@ BB =
      5     2     3
      5     2     3
 
-
+</pre><h2>* 15)<a name="13"></a></h2><pre class="codeinput">DD=ones(3,2)
+AA2=[DD zeros(3,2);zeros(3,2) DD]
+</pre><pre class="codeoutput">
 DD =
 
      1     1
@@ -173,42 +154,46 @@ AA2 =
 
 </pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
+%% Physik - Matlab-Uebungen 1
+% Autor: Raphael Laubscher
+% Klasse: I2p
+
 clc;clear;
-% 1a)
+%% 1a)
 a1 = (22+5.1^2)/(50-6.3^2)
-% b)
+%% b)
 b1 = 21/15 + 8^3/5 - 119/2.9^2
-% c)
+%% c)
 c1 = nthroot(123, 3) + log(600)/4
-% d)
+%% d)
 d1 = cos((7*pi)/9) + tan(((7*pi)/15)*pi) * sind(15)
 
-% 2a)
+%% 2a)
 x=5.2;
 y=3.6;
 
 a2 = (5/4)*x*y - (8*x)/y^2 + sqrt(x*y)
-% b)
+%% b)
 b2 = 4*(x*y)^2 - (x+y)/((2*x-y)^2) + sqrt((x+y)/(2*x-y))
 
-% 3a)
+%% 3a)
 
-% ...
+%% ...
 
-% * 9)
+%% * 9)
 aa=[zeros(1,5) 4.8] % Zeilenvektor
 %aa2=[zeros(5,1); 4.8] % Spaltenvektor
 
-% * 11)
+%% * 11)
 AA=[130:-20:10;linspace(1,12,7);linspace(12,72,7)]
 
-% * 12)
+%% * 12)
 %BB(:,1)=linspace(5,5,4)
 %BB(:,2)=linspace(2,2,4)
 %BB(:,3)=linspace(3,3,4)
 BB=[linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
 
-% * 15)
+%% * 15)
 DD=ones(3,2)
 AA2=[DD zeros(3,2);zeros(3,2) DD]
 
