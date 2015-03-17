@@ -20,7 +20,8 @@ b2 = 4*(x*y)^2 - (x+y)/((2*x-y)^2) + sqrt((x+y)/(2*x-y))
 
 
 % 9)
-aa=[zeros(1,5) 4.8]
+aa=[zeros(1,5) 4.8] % Zeilenvektor
+aa2=[zeros(5,1); 4.8] % Spaltenvektor
 % 11)
 AA=[130:-20:10;linspace(1,12,7);linspace(12,72,7)]
 % 12)
