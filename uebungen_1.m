@@ -19,15 +19,15 @@ b2 = 4*(x*y)^2 - (x+y)/((2*x-y)^2) + sqrt((x+y)/(2*x-y))
 % 3a)
 
 
-% 9)
+% * 9)
 aa=[zeros(1,5) 4.8] % Zeilenvektor
 aa2=[zeros(5,1); 4.8] % Spaltenvektor
-% 11)
+% * 11)
 AA=[130:-20:10;linspace(1,12,7);linspace(12,72,7)]
-% 12)
+% * 12)
 BB(:,1)=linspace(5,5,4)
 BB(:,2)=linspace(2,2,4)
 BB(:,3)=linspace(3,3,4)
-% 15)
+% * 15)
 DD=ones(3,2)
 AA2=[DD zeros(3,2);zeros(3,2) DD]
