@@ -1,7 +1,4 @@
-%% Physik - Matlab-Uebungen 1
-
-% Autor: Raphael Laubscher
-% Klasse: I2p
+%% Serie M1, laubr2 (Raphael Laubscher)
 
 clc;clear;
 %% 1a)
