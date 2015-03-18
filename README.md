@@ -1,3 +1,3 @@
 # matlab
 
-* [Uebungen 1](http://raeffu.github.io/matlab/)
+* [Übungen MATLAB M1](http://raeffu.github.io/matlab/)
