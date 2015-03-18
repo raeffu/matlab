@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>uebungen_1</title><meta name="generator" content="MATLAB 8.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-03-17"><meta name="DC.source" content="uebungen_1.m"><style type="text/css">
+      --><title>uebungen_1</title><meta name="generator" content="MATLAB 8.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-03-18"><meta name="DC.source" content="uebungen_1.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -91,8 +91,8 @@ d1 =
 
     1.6533
 
-</pre><h2>2a)<a name="6"></a></h2><pre class="codeinput">x=5.2;
-y=3.6;
+</pre><h2>2a)<a name="6"></a></h2><pre class="codeinput">x = 5.2;
+y = 3.6;
 
 a2 = (5/4)*x*y - (8*x)/y^2 + sqrt(x*y)
 </pre><pre class="codeoutput">
@@ -106,14 +106,14 @@ b2 =
 
    1.4027e+03
 
-</pre><h2>3a)<a name="8"></a></h2><h2>...<a name="9"></a></h2><h2>* 9)<a name="10"></a></h2><pre class="codeinput">aa=[zeros(1,5) 4.8] <span class="comment">% Zeilenvektor</span>
+</pre><h2>3a)<a name="8"></a></h2><h2>...<a name="9"></a></h2><h2>* 9)<a name="10"></a></h2><pre class="codeinput">aa = [zeros(1,5) 4.8] <span class="comment">% Zeilenvektor</span>
 <span class="comment">%aa2=[zeros(5,1); 4.8] % Spaltenvektor</span>
 </pre><pre class="codeoutput">
 aa =
 
          0         0         0         0         0    4.8000
 
-</pre><h2>* 11)<a name="11"></a></h2><pre class="codeinput">AA=[130:-20:10;linspace(1,12,7);linspace(12,72,7)]
+</pre><h2>* 11)<a name="11"></a></h2><pre class="codeinput">AA = [130:-20:10;linspace(1,12,7);linspace(12,72,7)]
 </pre><pre class="codeoutput">
 AA =
 
@@ -121,10 +121,10 @@ AA =
     1.0000    2.8333    4.6667    6.5000    8.3333   10.1667   12.0000
    12.0000   22.0000   32.0000   42.0000   52.0000   62.0000   72.0000
 
-</pre><h2>* 12)<a name="12"></a></h2><pre class="codeinput"><span class="comment">%BB(:,1)=linspace(5,5,4)</span>
-<span class="comment">%BB(:,2)=linspace(2,2,4)</span>
-<span class="comment">%BB(:,3)=linspace(3,3,4)</span>
-BB=[linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
+</pre><h2>* 12)<a name="12"></a></h2><pre class="codeinput"><span class="comment">%BB(:,1) = linspace(5,5,4)</span>
+<span class="comment">%BB(:,2) = linspace(2,2,4)</span>
+<span class="comment">%BB(:,3) = linspace(3,3,4)</span>
+BB = [linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
 </pre><pre class="codeoutput">
 BB =
 
@@ -133,8 +133,8 @@ BB =
      5     2     3
      5     2     3
 
-</pre><h2>* 15)<a name="13"></a></h2><pre class="codeinput">DD=ones(3,2)
-AA2=[DD zeros(3,2);zeros(3,2) DD]
+</pre><h2>* 15)<a name="13"></a></h2><pre class="codeinput">DD = ones(3,2)
+AA2 = [DD zeros(3,2);zeros(3,2) DD]
 </pre><pre class="codeoutput">
 DD =
 
@@ -169,8 +169,8 @@ c1 = nthroot(123, 3) + log(600)/4
 d1 = cos((7*pi)/9) + tan(((7*pi)/15)*pi) * sind(15)
 
 %% 2a)
-x=5.2;
-y=3.6;
+x = 5.2;
+y = 3.6;
 
 a2 = (5/4)*x*y - (8*x)/y^2 + sqrt(x*y)
 %% b)
@@ -181,21 +181,21 @@ b2 = 4*(x*y)^2 - (x+y)/((2*x-y)^2) + sqrt((x+y)/(2*x-y))
 %% ...
 
 %% * 9)
-aa=[zeros(1,5) 4.8] % Zeilenvektor
+aa = [zeros(1,5) 4.8] % Zeilenvektor
 %aa2=[zeros(5,1); 4.8] % Spaltenvektor
 
 %% * 11)
-AA=[130:-20:10;linspace(1,12,7);linspace(12,72,7)]
+AA = [130:-20:10;linspace(1,12,7);linspace(12,72,7)]
 
 %% * 12)
-%BB(:,1)=linspace(5,5,4)
-%BB(:,2)=linspace(2,2,4)
-%BB(:,3)=linspace(3,3,4)
-BB=[linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
+%BB(:,1) = linspace(5,5,4)
+%BB(:,2) = linspace(2,2,4)
+%BB(:,3) = linspace(3,3,4)
+BB = [linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
 
 %% * 15)
-DD=ones(3,2)
-AA2=[DD zeros(3,2);zeros(3,2) DD]
+DD = ones(3,2)
+AA2 = [DD zeros(3,2);zeros(3,2) DD]
 
 ##### SOURCE END #####
 --></body></html>
