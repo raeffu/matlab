@@ -1,4 +1,5 @@
 %% Physik - Matlab-Uebungen 1
+
 % Autor: Raphael Laubscher
 % Klasse: I2p
 
@@ -32,9 +33,12 @@ aa = [zeros(1,5) 4.8] % Zeilenvektor
 AA = [130:-20:10;linspace(1,12,7);linspace(12,72,7)]
 
 %% * 12)
-%BB(:,1) = linspace(5,5,4)
-%BB(:,2) = linspace(2,2,4)
-%BB(:,3) = linspace(3,3,4)
+
+% alternative Loesung
+% BB(:,1) = linspace(5,5,4)
+% BB(:,2) = linspace(2,2,4)
+% BB(:,3) = linspace(3,3,4)
+
 BB = [linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
 
 %% * 15)
