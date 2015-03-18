@@ -1,4 +1,4 @@
-%% Serie M1, laubr2 (Raphael Laubscher)
+% Serie M1, laubr2 (Raphael Laubscher)
 
 clc;clear;
 %% 1a)
