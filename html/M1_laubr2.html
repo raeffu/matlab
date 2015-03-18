@@ -1,0 +1,206 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>M1_laubr2</title><meta name="generator" content="MATLAB 8.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-03-18"><meta name="DC.source" content="M1_laubr2.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">1a)</a></li><li><a href="#3">b)</a></li><li><a href="#4">c)</a></li><li><a href="#5">d)</a></li><li><a href="#6">2a)</a></li><li><a href="#7">b)</a></li><li><a href="#8">3a)</a></li><li><a href="#9">...</a></li><li><a href="#10">* 9)</a></li><li><a href="#11">* 11)</a></li><li><a href="#12">* 12)</a></li><li><a href="#13">* 15)</a></li></ul></div><pre class="codeinput"><span class="comment">% Serie M1, laubr2 (Raphael Laubscher)</span>
+
+clc;clear;
+</pre><h2>1a)<a name="2"></a></h2><pre class="codeinput">a1 = (22+5.1^2)/(50-6.3^2)
+</pre><pre class="codeoutput">
+a1 =
+
+    4.6566
+
+</pre><h2>b)<a name="3"></a></h2><pre class="codeinput">b1 = 21/15 + 8^3/5 - 119/2.9^2
+</pre><pre class="codeoutput">
+b1 =
+
+   89.6502
+
+</pre><h2>c)<a name="4"></a></h2><pre class="codeinput">c1 = nthroot(123, 3) + log(600)/4
+</pre><pre class="codeoutput">
+c1 =
+
+    6.5724
+
+</pre><h2>d)<a name="5"></a></h2><pre class="codeinput">d1 = cos((7*pi)/9) + tan(((7*pi)/15)*pi) * sind(15)
+</pre><pre class="codeoutput">
+d1 =
+
+    1.6533
+
+</pre><h2>2a)<a name="6"></a></h2><pre class="codeinput">x = 5.2;
+y = 3.6;
+
+a2 = (5/4)*x*y - (8*x)/y^2 + sqrt(x*y)
+</pre><pre class="codeoutput">
+a2 =
+
+   24.5168
+
+</pre><h2>b)<a name="7"></a></h2><pre class="codeinput">b2 = 4*(x*y)^2 - (x+y)/((2*x-y)^2) + sqrt((x+y)/(2*x-y))
+</pre><pre class="codeoutput">
+b2 =
+
+   1.4027e+03
+
+</pre><h2>3a)<a name="8"></a></h2><h2>...<a name="9"></a></h2><h2>* 9)<a name="10"></a></h2><pre class="codeinput">aa = [zeros(1,5) 4.8] <span class="comment">% Zeilenvektor</span>
+<span class="comment">%aa2=[zeros(5,1); 4.8] % Spaltenvektor</span>
+</pre><pre class="codeoutput">
+aa =
+
+         0         0         0         0         0    4.8000
+
+</pre><h2>* 11)<a name="11"></a></h2><pre class="codeinput">AA = [130:-20:10;linspace(1,12,7);linspace(12,72,7)]
+</pre><pre class="codeoutput">
+AA =
+
+  130.0000  110.0000   90.0000   70.0000   50.0000   30.0000   10.0000
+    1.0000    2.8333    4.6667    6.5000    8.3333   10.1667   12.0000
+   12.0000   22.0000   32.0000   42.0000   52.0000   62.0000   72.0000
+
+</pre><h2>* 12)<a name="12"></a></h2><pre class="codeinput"><span class="comment">% alternative Loesung</span>
+<span class="comment">% BB(:,1) = linspace(5,5,4)</span>
+<span class="comment">% BB(:,2) = linspace(2,2,4)</span>
+<span class="comment">% BB(:,3) = linspace(3,3,4)</span>
+
+BB = [linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
+</pre><pre class="codeoutput">
+BB =
+
+     5     2     3
+     5     2     3
+     5     2     3
+     5     2     3
+
+</pre><h2>* 15)<a name="13"></a></h2><pre class="codeinput">DD = ones(3,2)
+AA2 = [DD zeros(3,2);zeros(3,2) DD]
+</pre><pre class="codeoutput">
+DD =
+
+     1     1
+     1     1
+     1     1
+
+
+AA2 =
+
+     1     1     0     0
+     1     1     0     0
+     1     1     0     0
+     0     0     1     1
+     0     0     1     1
+     0     0     1     1
+
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% Serie M1, laubr2 (Raphael Laubscher)
+
+clc;clear;
+%% 1a)
+a1 = (22+5.1^2)/(50-6.3^2)
+%% b)
+b1 = 21/15 + 8^3/5 - 119/2.9^2
+%% c)
+c1 = nthroot(123, 3) + log(600)/4
+%% d)
+d1 = cos((7*pi)/9) + tan(((7*pi)/15)*pi) * sind(15)
+
+%% 2a)
+x = 5.2;
+y = 3.6;
+
+a2 = (5/4)*x*y - (8*x)/y^2 + sqrt(x*y)
+%% b)
+b2 = 4*(x*y)^2 - (x+y)/((2*x-y)^2) + sqrt((x+y)/(2*x-y))
+
+%% 3a)
+
+%% ...
+
+%% * 9)
+aa = [zeros(1,5) 4.8] % Zeilenvektor
+%aa2=[zeros(5,1); 4.8] % Spaltenvektor
+
+%% * 11)
+AA = [130:-20:10;linspace(1,12,7);linspace(12,72,7)]
+
+%% * 12)
+
+% alternative Loesung
+% BB(:,1) = linspace(5,5,4)
+% BB(:,2) = linspace(2,2,4)
+% BB(:,3) = linspace(3,3,4)
+
+BB = [linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
+
+%% * 15)
+DD = ones(3,2)
+AA2 = [DD zeros(3,2);zeros(3,2) DD]
+
+##### SOURCE END #####
+--></body></html>
