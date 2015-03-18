@@ -66,7 +66,10 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Physik - Matlab-Uebungen 1</a></li><li><a href="#2">1a)</a></li><li><a href="#3">b)</a></li><li><a href="#4">c)</a></li><li><a href="#5">d)</a></li><li><a href="#6">2a)</a></li><li><a href="#7">b)</a></li><li><a href="#8">3a)</a></li><li><a href="#9">...</a></li><li><a href="#10">* 9)</a></li><li><a href="#11">* 11)</a></li><li><a href="#12">* 12)</a></li><li><a href="#13">* 15)</a></li></ul></div><h2>Physik - Matlab-Uebungen 1<a name="1"></a></h2><p>Autor: Raphael Laubscher Klasse: I2p</p><pre class="codeinput">clc;clear;
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Physik - Matlab-Uebungen 1</a></li><li><a href="#2">1a)</a></li><li><a href="#3">b)</a></li><li><a href="#4">c)</a></li><li><a href="#5">d)</a></li><li><a href="#6">2a)</a></li><li><a href="#7">b)</a></li><li><a href="#8">3a)</a></li><li><a href="#9">...</a></li><li><a href="#10">* 9)</a></li><li><a href="#11">* 11)</a></li><li><a href="#12">* 12)</a></li><li><a href="#13">* 15)</a></li></ul></div><h2>Physik - Matlab-Uebungen 1<a name="1"></a></h2><pre class="codeinput"><span class="comment">% Autor: Raphael Laubscher</span>
+<span class="comment">% Klasse: I2p</span>
+
+clc;clear;
 </pre><h2>1a)<a name="2"></a></h2><pre class="codeinput">a1 = (22+5.1^2)/(50-6.3^2)
 </pre><pre class="codeoutput">
 a1 =
@@ -121,9 +124,11 @@ AA =
     1.0000    2.8333    4.6667    6.5000    8.3333   10.1667   12.0000
    12.0000   22.0000   32.0000   42.0000   52.0000   62.0000   72.0000
 
-</pre><h2>* 12)<a name="12"></a></h2><pre class="codeinput"><span class="comment">%BB(:,1) = linspace(5,5,4)</span>
-<span class="comment">%BB(:,2) = linspace(2,2,4)</span>
-<span class="comment">%BB(:,3) = linspace(3,3,4)</span>
+</pre><h2>* 12)<a name="12"></a></h2><pre class="codeinput"><span class="comment">% alternative Loesung</span>
+<span class="comment">% BB(:,1) = linspace(5,5,4)</span>
+<span class="comment">% BB(:,2) = linspace(2,2,4)</span>
+<span class="comment">% BB(:,3) = linspace(3,3,4)</span>
+
 BB = [linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
 </pre><pre class="codeoutput">
 BB =
@@ -155,6 +160,7 @@ AA2 =
 </pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Physik - Matlab-Uebungen 1
+
 % Autor: Raphael Laubscher
 % Klasse: I2p
 
@@ -188,9 +194,12 @@ aa = [zeros(1,5) 4.8] % Zeilenvektor
 AA = [130:-20:10;linspace(1,12,7);linspace(12,72,7)]
 
 %% * 12)
-%BB(:,1) = linspace(5,5,4)
-%BB(:,2) = linspace(2,2,4)
-%BB(:,3) = linspace(3,3,4)
+
+% alternative Loesung
+% BB(:,1) = linspace(5,5,4)
+% BB(:,2) = linspace(2,2,4)
+% BB(:,3) = linspace(3,3,4)
+
 BB = [linspace(5,5,4);linspace(2,2,4);linspace(3,3,4)]'
 
 %% * 15)
