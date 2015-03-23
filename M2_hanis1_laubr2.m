@@ -41,7 +41,6 @@ function [] = M2_hanis1_laubr2()
     end
 
     function task1()
-        % TODO
         count = 0;
         for i = -3:3
             count = count + 1;
