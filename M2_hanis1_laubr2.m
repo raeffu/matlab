@@ -2,7 +2,7 @@ function [] = M2_hanis1_laubr2()
 %   Serie M2, hanis1 (Sebastian Haeni), laubr2 (Raphael Laubscher)
 
     clc;                         % Clear console
-    currentTask = 3;             % Current selected task
+    currentTask = 1;             % Current selected task
     f = figure('Visible','off'); % Create a figure
     f.SizeChangedFcn = @(src, ev) drawUi(); % Redraw function
     f.Visible = 'on';            % Make figure visble
@@ -42,9 +42,14 @@ function [] = M2_hanis1_laubr2()
 
     function task1()
         % TODO
+        count = 0;
+        for i = -3:3
+            count = count + 1;
+            A(count) = i^2-exp(0.5*i)+i;
+        end
         uicontrol('Style', 'text',...
-            'Position', [220 200 120 20],...
-            'String', 'not yet implemented');
+            'Position', [0 -100 f.Position(3) f.Position(4)],...
+            'String', A);
     end
 
     function task3()
