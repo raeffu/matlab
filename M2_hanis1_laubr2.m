@@ -52,10 +52,15 @@ function [] = M2_hanis1_laubr2()
     end
 
     function task3()
-        % TODO
+        count = 0;
+        values = [1.5:1:5.5 6.6];
+        for i = values
+            count = count + 1;
+            B(count) = ((i+3)^4)/((i+1)*sqrt(i));
+        end
         uicontrol('Style', 'text',...
-            'Position', [220 200 120 20],...
-            'String', 'not yet implemented');
+            'Position', [0 -100 f.Position(3) f.Position(4)],...
+            'String', B);
     end
 
     function task7()
