@@ -1,12 +1,18 @@
 function [] = M2_hanis1_laubr2()
 %   Serie M2, hanis1 (Sebastian Haeni), laubr2 (Raphael Laubscher)
+%   The different solutions will be accessible in one figure. Just select
+%   the task # in the drop down in the upper left.
+
+    %% Initialization
 
     clc;                         % Clear console
     currentTask = 1;             % Current selected task
     f = figure('Visible','off'); % Create a figure
     f.SizeChangedFcn = @(src, ev) drawUi(); % Redraw function
-    f.Visible = 'on';            % Make figure visble
-
+    f.Visible = 'on';            % Make figure visible
+    
+    %% General functions
+    
     % Draw UI
     function drawUi()
         clf;
@@ -34,37 +40,43 @@ function [] = M2_hanis1_laubr2()
         end
     end
 
-    % Setting current task and update UI
+    % Change current task and update UI
     function setTask(value)
         currentTask = value;
         drawUi();
     end
 
+    %% Task 1
     function task1()
         count = 0;
-        for i = -3:3
+        values = -3:3;
+        result = zeros(1, length(values));
+        for i = values
             count = count + 1;
-            A(count) = i^2-exp(0.5*i)+i;
+            result(count) = i^2 - exp(0.5 * i) + i;
         end
         uicontrol('Style', 'text',...
             'Position', [0 -100 f.Position(3) f.Position(4)],...
-            'String', A);
+            'String', result);
     end
 
+    %% Task 3
     function task3()
         count = 0;
         values = [1.5:1:5.5 6.6];
+        result = zeros(1, length(values));
         for i = values
             count = count + 1;
-            B(count) = ((i+3)^4)/((i+1)*sqrt(i));
+            result(count) = ((i + 3)^4)/((i + 1) * sqrt(i));
         end
         uicontrol('Style', 'text',...
             'Position', [0 -100 f.Position(3) f.Position(4)],...
-            'String', B);
+            'String', result);
     end
 
+    %% Task 7
     function task7()
-        sn = @(x) -3*(x^4) + 10 * (x^2) - 3;
+        sn = @(x) -3 * (x^4) + 10 * (x^2) - 3;
 
         subplot(2, 1, 1);
         fplot(sn, [-4, 3]);
@@ -78,6 +90,7 @@ function [] = M2_hanis1_laubr2()
         % automagically
     end
 
+    %% Task 8
     function task8()
         subplot(1, 2, 1);
         task8a();
