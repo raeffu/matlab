@@ -5,10 +5,10 @@
 ![](aufgabe1.png)
 
 ### Aufgabe 4
-![](aufgabe4.png)
+![](abbildung_task4_hanis1_laubr2.png)
 
 ### Aufgabe 5
-![](aufgabe5.png)
+![](abbildung_task5_hanis1_laubr2.png)
 
 ### Aufgabe 6
 ![](aufgabe6.png)
