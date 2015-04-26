@@ -2,7 +2,7 @@
 ## hanis1 (Sebastian Häni), laubr2 (Raphael Laubscher)
 
 ### Aufgabe 1
-![](aufgabe1.png)
+![](abbildung_task1_hanis1_laubr2.png)
 
 ### Aufgabe 4
 ![](abbildung_task4_hanis1_laubr2.png)
@@ -11,4 +11,4 @@
 ![](abbildung_task5_hanis1_laubr2.png)
 
 ### Aufgabe 6
-![](aufgabe6.png)
+![](abbildung_task6_hanis1_laubr2.png)
