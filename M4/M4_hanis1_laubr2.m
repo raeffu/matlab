@@ -50,7 +50,7 @@ function [] = M4_hanis1_laubr2()
     function task2()
         fs = 11025;
         cc = synth(110, 220, 20, 10, 1, fs);
-        %sound(cc, fs);
+        % sound(cc, fs);
         
         fu = ((0:length(cc)-1) / length(cc))*fs;
         s = abs(fft(cc, length(cc)));
@@ -96,7 +96,17 @@ function [] = M4_hanis1_laubr2()
 
     %% Task 5
     function task5()
+        fs = 11025;
+        dur = 6;
+        A0 = 1;
+        I0 = 10;
+        tau = 2;
+        fc = 110;
+        fm = 220;
         
+        [Aenv, Ienv] = bellenv(A0, I0, tau, dur, fs);
+        cc = synth(fc, fm, Aenv, Ienv, dur, fs);
+        sound(cc, fs);
     end
 
 end
