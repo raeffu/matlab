@@ -1,6 +1,7 @@
 function [] = M4_task6_hanis1_laubr2()
 %   Serie M4, hanis1 (Sebastian Haeni), laubr2 (Raphael Laubscher)
     tact = 1/4;
+    frequency = 11025;
     melody = [
         350,2
         200,2
@@ -15,24 +16,28 @@ function [] = M4_task6_hanis1_laubr2()
         100,1
         350,1
     ];
-    playMelody(melody);
+    audio = createMelody(melody);
+    audiowrite('task6.wav', audio, frequency);
+    sound(audio, frequency);
     
     %% Play melody
-    function playMelody(melody)
+    function audio = createMelody(melody)
+        audio = [];
         for i = 1:length(melody)
-            bell(melody(i, 1)-100, melody(i, 1), 3, 2, melody(1, 2));
+            bell = bell(melody(i, 1)-100, melody(i, 1), 3, 2, melody(1, 2));
+            audio = cat(2, audio, bell);
         end
     end
     
     %% Play bell sound
-    function bell(fc, fm, I0, tau, dur)
+    function bell = bell(fc, fm, I0, tau, dur)
         if fc > 0
-            [Aenv, Ienv] = bellenv(1, I0, tau, dur * tact, 11025);
-            cc = synth(fc, fm, Aenv, Ienv, dur * tact, 11025);
-
-            sound(cc, 11025);
+            [Aenv, Ienv] = bellenv(1, I0, tau, dur * tact, frequency);
+            bell = synth(fc, fm, Aenv, Ienv, dur * tact, frequency);
+        else
+           % add break 
+           bell = zeros(1, round(dur * tact * frequency));
         end
-        pause(dur * tact);
     end
 
     %% Bell sound
